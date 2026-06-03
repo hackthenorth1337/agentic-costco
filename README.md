@@ -95,10 +95,8 @@ The agent asks:
 
 ## Run from GitHub
 
-Replace `<YOUR_GITHUB_REPO_URL>` with the repo URL after you push it.
-
 ```bash
-git clone <YOUR_GITHUB_REPO_URL>
+git clone https://github.com/hackthenorth1337/agentic-costco.git
 cd agentic-costco
 
 python3 -m venv .venv
