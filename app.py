@@ -1069,31 +1069,11 @@ IDEA_HTML = """
     <div class="card highlight">
       <h2>Is this a good idea?</h2>
       <p>
-        Yes, if we pitch it honestly: this is a future-facing demo of agentic procurement, not a claim
-        that every GPU provider already supports MPP natively.
-      </p>
-      <p>
         The strong thesis is that agents will become procurement engines. MPP and x402-style protocols
         make APIs economically addressable. The first useful markets are likely paid digital resources:
         search, inference, GPU compute, scraping, datasets, verification, and storage.
       </p>
       <a class="cta" href="/">Run the demo</a>
-    </div>
-
-    <div class="card warn">
-      <h2>The honest caveat</h2>
-      <p>
-        Most GPU and inference providers do not natively support MPP today. Parallel is a strong MPP-native
-        reference for paid agentic research. For Vast, RunPod, Together, Fireworks, Exa, and similar providers,
-        the realistic architecture is an MPP gateway wrapper.
-      </p>
-      <pre>Agent
-  -> MPP Gateway
-    -> Vast.ai API
-    -> RunPod API
-    -> Together / Fireworks
-    -> Exa / Tavily
-    -> Parallel MPP</pre>
     </div>
   </div>
 
@@ -1117,6 +1097,22 @@ IDEA_HTML = """
       <div class="flowbox"><b>4. Pay + retry</b><span>Agent pays through an accepted rail and retries with a payment credential.</span></div>
       <div class="flowbox"><b>5. Result</b><span>Provider returns the resource and a receipt tied to that exact purchase.</span></div>
     </div>
+  </div>
+
+  <div class="card warn" style="margin-top:16px;">
+    <h2>The honest caveat</h2>
+    <p>
+      Most GPU and inference providers do not natively support MPP today. Parallel is a strong MPP-native
+      reference for paid agentic research. For Vast, RunPod, Together, Fireworks, Exa, and similar providers,
+      the realistic architecture is an MPP gateway wrapper.
+    </p>
+    <pre>Agent
+  -> MPP Gateway
+    -> Vast.ai API
+    -> RunPod API
+    -> Together / Fireworks
+    -> Exa / Tavily
+    -> Parallel MPP</pre>
   </div>
 
   <div class="grid">
